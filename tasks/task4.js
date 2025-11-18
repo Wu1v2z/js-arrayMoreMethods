@@ -20,8 +20,6 @@ function getMostFuelEfficientCars(cars, brand) {
     return car.brand === brand;
   });
 
-  // 4. Сортуємо відфільтровані машини за витратою палива (від найменшої до найбільшої)
-  // Використовуємо метод sort()
   const sortedCars = efficientCarsByBrand.sort((a, b) => a.fuelConsumption - b.fuelConsumption);
 
   
