@@ -7,9 +7,6 @@ function getPopularCategories(products) {
   
   const highSalesProducts = products.filter(product => product.sales > 5);
 
-  // 2. Сортуємо відфільтровані товари за кількістю продажів (від більшого до меншого)
-  // Це гарантує, що коли ми пізніше будемо отримувати унікальні категорії,
-  // вони будуть у порядку, визначеному найпопулярнішими товарами.
   const sortedProducts = highSalesProducts.sort((a, b) => b.sales - a.sales);
 
   // 3. Залишаємо тільки категорії товарів за допомогою map
