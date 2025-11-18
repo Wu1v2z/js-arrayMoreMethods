@@ -24,7 +24,7 @@ function getMostFuelEfficientCars(cars, brand) {
   // Використовуємо метод sort()
   const sortedCars = efficientCarsByBrand.sort((a, b) => a.fuelConsumption - b.fuelConsumption);
 
-  // 5. Повертаємо відфільтрований та відсортований масив
+  
   return sortedCars;
 }
 
