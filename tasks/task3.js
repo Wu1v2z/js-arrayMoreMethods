@@ -20,9 +20,6 @@ function addSuccessPercent(olympicRepresentation) {
       successPercent = (item.medals / item.athletes) * 100;
     }
 
-    // 3. Форматуємо результат: округлюємо до 1 знака після коми та додаємо "%"
-    // .toFixed(1) повертає рядок (наприклад, "30.0" або "33.3")
-    // Далі ми додаємо знак "%" і створюємо кінцевий рядок (наприклад, "30.0%")
     const formattedPercent = successPercent.toFixed(1) + '%';
 
     // 4. Додаткова перевірка для випадку, коли очікується "0%" замість "0.0%"
