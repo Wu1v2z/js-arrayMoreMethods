@@ -9,16 +9,14 @@
 "Для заокруглення числа можна до десятих використовуйте .toFixed(1)"
 
 function addSuccessPercent(olympicRepresentation) {
-  // Використовуємо метод map для перетворення (трансформації) кожного елемента
+  
   const result = olympicRepresentation.map(item => {
     let successPercent;
 
-    // 1. Обробка ділення на нуль (athletes = 0)
+    
     if (item.athletes === 0) {
-      // Якщо спортсменів 0, успіх = 0%, як очікує тест
       successPercent = 0;
     } else {
-      // 2. Обчислюємо відсоток: (медалі / спортсмени) * 100
       successPercent = (item.medals / item.athletes) * 100;
     }
 
