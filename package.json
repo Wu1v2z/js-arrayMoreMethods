@@ -1,7 +1,19 @@
 {
-  "name": "js-arraymoremethods",
+  "name": "n",
   "version": "1.0.0",
   "description": "",
+  "keywords": [],
+  "homepage": "https://github.com/Wu1v2z/js-arrayMoreMethods#readme",
+  "bugs": {
+    "url": "https://github.com/Wu1v2z/js-arrayMoreMethods/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wu1v2z/js-arrayMoreMethods.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
   "main": "methods.js",
   "directories": {
     "test": "tests"
@@ -9,9 +21,6 @@
   "scripts": {
     "test": "jest"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "jest": "^29.7.0"
   }
