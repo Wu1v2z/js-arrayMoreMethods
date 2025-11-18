@@ -7,8 +7,7 @@ function getMostFuelEfficientCars(cars, brand) {
   // Використовуємо метод every()
   const allEfficient = cars.every(car => car.fuelConsumption < 6);
 
-  // 2. Якщо умова "всі машини < 6" НЕ виконується,
-  // повертаємо ПОРОЖНІЙ МАСИВ (як очікує тест), незалежно від бренду.
+  
   if (!allEfficient) {
     return [];
   }
