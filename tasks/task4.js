@@ -16,7 +16,7 @@ function getMostFuelEfficientCars(cars, brand) {
   // 3. Якщо умова виконується, фільтруємо за заданим брендом
   // Використовуємо метод filter()
   const efficientCarsByBrand = cars.filter(car => {
-    // Ми знаємо, що всі машини < 6, тому фільтруємо лише за брендом
+    
     return car.brand === brand;
   });
 
