@@ -22,8 +22,6 @@ function addSuccessPercent(olympicRepresentation) {
 
     const formattedPercent = successPercent.toFixed(1) + '%';
 
-    // 4. Додаткова перевірка для випадку, коли очікується "0%" замість "0.0%"
-    // Це потрібно для тесту, де медалі=0 та спортсмени=0, який очікує "0%"
     let finalPercent;
     if (item.athletes === 0 && item.medals === 0) {
       finalPercent = "0%";
