@@ -9,12 +9,9 @@ function getPopularCategories(products) {
 
   const sortedProducts = highSalesProducts.sort((a, b) => b.sales - a.sales);
 
-  // 3. Залишаємо тільки категорії товарів за допомогою map
   const sortedCategories = sortedProducts.map(product => product.category);
 
-  // 4. Залишаємо тільки унікальні категорії
-  // Конструкція new Set створює об'єкт Set з унікальними елементами,
-  // а потім Array.from(...) перетворює його назад у масив.
+
   const uniqueCategories = Array.from(new Set(sortedCategories));
 
   return uniqueCategories;
