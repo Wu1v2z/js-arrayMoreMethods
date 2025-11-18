@@ -29,11 +29,9 @@ function addSuccessPercent(olympicRepresentation) {
       finalPercent = formattedPercent;
     }
 
-
-    // 5. Повертаємо новий об'єкт, додаючи нове поле percentOfSuccess
     return {
-      ...item, // Копіюємо всі існуючі поля (sport, athletes, medals)
-      percentOfSuccess: finalPercent // Додаємо нове обчислене поле-рядок
+      ...item, 
+      percentOfSuccess: finalPercent 
     };
   });
 
